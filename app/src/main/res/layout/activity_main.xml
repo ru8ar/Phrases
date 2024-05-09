@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="407dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="135dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.145">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bonnenuit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="MyClick"
+                android:text="Good Night" />
+
+            <Button
+                android:id="@+id/comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="MyClick"
+                android:text="I beg your pardon? / I'm sorry?" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/jenesaispas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="MyClick"
+                android:text="I don't know" />
+
+            <Button
+                android:id="@+id/mesdamesetmessieurs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="MyClick"
+                android:text="Ladies and gentlemen" />
+            />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/ademain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="MyClick"
+                android:text="See you tomorrow" />
+
+            <Button
+                android:id="@+id/pouvezvousmaider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="MyClick"
+                android:text="Can you help me?" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="93dp"
+        android:text="Çık"
+        android:onClick="Clickk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
